@@ -283,4 +283,4 @@ skills/agent-loop-controller/agents/openai.yaml
 skills/subagent-plan-decomposer/SKILL.md
 ```
 
-仓库中保留的 `agent-loop-controller.zip` 是旧版归档，不是当前 active source。
+旧版 `agent-loop-controller.zip` 不再作为当前 active source 发布；当前有效源码以 `skills/` 目录为准。
