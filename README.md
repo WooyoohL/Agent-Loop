@@ -1,6 +1,6 @@
-# Agent Loop Skills
+# Agent Loop Skill 
 
-这个仓库包含两个 Codex skill，用来把复杂任务变成可拆分、可调度、可验收、可打回的 Agent 工作流。
+包含两个 Codex skill，用来把复杂任务变成可拆分、可调度、可验收、可打回的 Agent 工作流。
 
 核心目标不是“多开几个 agent”，而是解决复杂任务里最容易失真的几个问题：
 
