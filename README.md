@@ -7,8 +7,6 @@
 - `$agent-loop-lite`：轻量闭环。适合小到中等任务、参数实验、本地脚本、有限代码修改。它强制做 `Subagent Check`，但默认不进入完整 DAG / scheduler / reviewer 流程。
 - `$agent-loop-full`：完整闭环。适合复杂 PRD、多模块并行开发、长链路验收、高风险改动。它会强制进入方案重写、模块 DAG、并行调度、join gate 和 requirement ledger 验收。
 
-旧入口 `$agent-loop-controller` 仍保留为兼容目录。新任务建议直接使用 `$agent-loop-lite` 或 `$agent-loop-full`。
-
 ## 怎么选
 
 | 场景 | 建议入口 |
@@ -113,12 +111,6 @@ cp -r skills/agent-loop-full ~/.codex/skills/agent-loop-full
 cp -r skills/subagent-plan-decomposer ~/.codex/skills/subagent-plan-decomposer
 ```
 
-如需兼容旧调用，也可以继续安装：
-
-```powershell
-Copy-Item -Recurse .\skills\agent-loop-controller D:\codex\skills\agent-loop-controller
-```
-
 ## 仓库结构
 
 ```text
@@ -127,9 +119,6 @@ skills/
     SKILL.md
     agents/openai.yaml
   agent-loop-full/
-    SKILL.md
-    agents/openai.yaml
-  agent-loop-controller/
     SKILL.md
     agents/openai.yaml
   subagent-plan-decomposer/
