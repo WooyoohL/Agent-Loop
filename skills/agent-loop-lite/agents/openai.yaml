@@ -1,0 +1,7 @@
+interface:
+  display_name: "Agent Loop Lite"
+  short_description: "Lightweight auditable task loop"
+  default_prompt: "Use $agent-loop-lite to run this task with a lightweight plan, mandatory Subagent Check, manifest evidence, and a concise gate summary."
+
+policy:
+  allow_implicit_invocation: false

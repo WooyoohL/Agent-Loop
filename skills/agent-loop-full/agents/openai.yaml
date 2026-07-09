@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Loop Full"
+  short_description: "用 ledger、DAG 和门控执行 Agent 循环"
+  default_prompt: "使用 $agent-loop-full，把这个请求转成 requirement ledger、Subagent-Ready DAG、并行调度和门控验收流程。"
